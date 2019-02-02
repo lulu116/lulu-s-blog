@@ -4,10 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>lulu's blog</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/static/img/big.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./static/img/big.ico" />
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link href=".<%=htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
   </head>
   <body>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+    <script type="text/javascript" src=".<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %>
   </body>
 </html>
