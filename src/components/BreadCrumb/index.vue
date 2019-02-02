@@ -8,8 +8,8 @@
       :key="item.key"
       :to="{ path: 'item.path' }"
     >
-      <svg-icon :iconClass="item.icon"></svg-icon>
-      <span>{{item.label}}</span>
+      <!--<svg-icon :iconClass="item.icon"></svg-icon>-->
+      <span style="color:#909399ad">{{item.label}}</span>
     </el-breadcrumb-item>
   </el-breadcrumb>
 </template>
@@ -24,10 +24,10 @@ export default {
       breadCrumbList: []
     }
   },
-  watch: {
+  watch: { // 监听路由变化
     $route: {
-      deep: true,
-      handler (newVal, oldVal) {
+      deep: true, // 深度监听
+      handler () {
         this.getBreadcrumbRoutes()
       }
     }
@@ -61,5 +61,6 @@ export default {
   height: 60px;
   line-height: 60px;
   margin-left: 20px;
+  float: left;
 }
 </style>
