@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import NProgress from 'nprogress'
 // 全局引入element-ui，引入样式
 import ElementUI from 'element-ui'
@@ -46,6 +47,7 @@ router.afterEach(() => {
 new Vue({
   el: '#app', // 提供一个在页  面上已存在的 DOM 元素作为 Vue 实例的挂载目标。
   router, // 注入路由 this.$router 访问路由器，也可以通过 this.$route 访问当前路由
+  store, // 状态管理器
   components: { App }, // Vue 实例可用组件的哈希表
   template: '<App/>' // 一个字符串模板作为 Vue 实例的标识使用。模板将会 替换 挂载的元素。挂载元素的内容都将被忽略，除非模板的内容有分发 slot
 })

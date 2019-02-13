@@ -1,5 +1,7 @@
 <template>
-  <div class="app-wrapper">
+  <div 
+    class="app-wrapper hideSidebar"
+  >
     <AppAside class="sidebar-container"/>
     <div class="main-container">
       <app-header/>
@@ -18,6 +20,9 @@ export default {
     AppFooter,
     AppHeader,
     AppAside
+  },
+  computed: {
+    classObj() {}
   }
 }
 </script>

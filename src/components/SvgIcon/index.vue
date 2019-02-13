@@ -1,6 +1,7 @@
 <template>
   <svg
     :class="svgClass"
+    @click="toggleHamburger"
     aria-hidden="true"
   >
     <use :xlink:href="iconName" />
@@ -30,6 +31,11 @@ export default {
       } else {
         return 'svg-icon'
       }
+    }
+  },
+   methods: {
+    toggleHamburger() {
+      this.$emit('toggleHamburger')
     }
   }
 }

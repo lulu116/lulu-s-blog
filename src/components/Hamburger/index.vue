@@ -2,6 +2,7 @@
    <div class="hamburger">
      <svg-icon
        :iconClass="hamburgerIcon"
+       @toggleHamburger="handleClickChangeHamburger"
        class="ham-svg"
      >
      </svg-icon>
@@ -15,6 +16,11 @@ export default {
     hamburgerIcon: {
       type: String,
       default: ''
+    }
+  },
+   methods: {
+    handleClickChangeHamburger() {
+       this.$emit('handleClickChangeHamburger')
     }
   }
 }

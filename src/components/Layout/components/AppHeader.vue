@@ -5,9 +5,8 @@
   >
     <hamburger
       :is-Collapse="isCollapse"
-      :hamburgerIcon="isCollapse ? 'zhankai_right' : 'zhankai_left'"
-      class="hamburger-container"
-      @click="handleClickChangeHamburger"
+      :hamburgerIcon="!isCollapse ? 'zhankai_right' : 'zhankai_left'"
+      @handleClickChangeHamburger="changeHamburger"
     />
     <bread-crumb/>
     <el-dropdown trigger="click" class="user-dropdown" @command="handleCommand">
@@ -51,13 +50,14 @@ export default {
   data () {
     return {
       userName: '111',
-      isCollapse: true
+      isCollapse: false,
+      ccount: ''
     }
   },
   methods: {
-    handleClickChangeHamburger () {
-      debugger
-      return !this.isCollapse
+    changeHamburger () {
+      this.isCollapse = !this.isCollapse;
+      console.log(this.$store)
     },
     handleCommand (command) {
       if (command === 'b') {
