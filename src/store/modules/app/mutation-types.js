@@ -1,0 +1,1 @@
+export const TOGGLE_SLIDERBAR = 'TOGGLE_SLIDERBAR' // 侧边栏

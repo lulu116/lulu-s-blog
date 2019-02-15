@@ -1,6 +1,7 @@
 <template>
-  <div 
-    class="app-wrapper hideSidebar"
+  <div
+    class="app-wrapper"
+    :class="classObj"
   >
     <AppAside class="sidebar-container"/>
     <div class="main-container">
@@ -10,9 +11,10 @@
     </div>
   </div>
 </template>
-
 <script>
 import {AppMain, AppFooter, AppHeader, AppAside} from './components'
+import {mapGetters} from 'vuex'
+
 export default {
   name: 'Layout',
   components: {
@@ -22,7 +24,16 @@ export default {
     AppAside
   },
   computed: {
-    classObj() {}
+    ...mapGetters('app', [
+      'getUserName',
+      'getSliderbar'
+    ]),
+    classObj () {
+      return {
+        hideSidebar: !this.getSliderbar,
+        openSidebar: this.getSliderbar
+      }
+    }
   }
 }
 </script>
