@@ -1,5 +1,5 @@
 /**
- * Created by Daniel on 16/11/18.
+ * Created by liuting on 16/11/18.
  */
 import Cache from './cache'
 import Json from './json'

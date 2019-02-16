@@ -40,17 +40,29 @@ div:focus {
   bottom: 0;
   left: 0;
   z-index: 1001;
-  overflow: hidden;
+  overflow-y: auto;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2) !important;
 }
 // 页面右边 内容区域
 .app-container {
-  min-height: calc(100vh - 151px);
-  padding: 15px;
+  min-height: calc(100vh - 106px);
   margin: 15px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   background-color: $appMainBg;
   position: relative;
   overflow: hidden;
+  .container-nav-class {
+    width: 280px;
+    height: calc(100vh - 106px);
+    overflow: auto;
+    float: left;
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.2) !important;
+  }
+  .container-main {
+    overflow: auto;
+    float: left;
+  }
 }
 .el-menu-item {
   font-size: 15px!important;

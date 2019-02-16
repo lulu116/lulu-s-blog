@@ -9,13 +9,33 @@ const topMenu = [{
   path: '/dashboard',
   icon: 'shenghuo'
 }, {
-  label: '个人技能',
+  label: '技术',
   key: '2',
   path: '/skill',
   icon: 'jishu'
 }, {
-  label: '个人项目',
+  label: '项目',
   key: '3',
+  path: '/project',
+  icon: 'jishu'
+},{
+  label: '荐书',
+  key: '4',
+  path: '/project',
+  icon: 'jishu'
+},{
+  label: '生活',
+  key: '5',
+  path: '/project',
+  icon: 'jishu'
+},{
+  label: '总结',
+  key: '6',
+  path: '/project',
+  icon: 'jishu'
+},{
+  label: '关于我',
+  key: '7',
   path: '/project',
   icon: 'jishu'
 }]

@@ -14,7 +14,7 @@
       class="menu-item"
     >
       <router-link :to="{path: item.path}" class="router-link">
-        <svg-icon :iconClass="item.icon"></svg-icon>
+        <svg-icon :iconClass="item.icon" className="sliderbar-icon"></svg-icon>
         {{item.label}}
       </router-link>
     </el-menu-item>
@@ -38,6 +38,9 @@ export default {
     .router-link {
       display: block;
       padding-left: 20px;
+      .sliderbar-icon {
+        margin-right: 20px;
+      }
     }
   }
 </style>

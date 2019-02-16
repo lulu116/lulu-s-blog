@@ -23,6 +23,7 @@ export default {
   },
   computed: {
     iconName () {
+      console.log(this.iconClass)
       return `#icon-${this.iconClass}`
     },
     svgClass () {

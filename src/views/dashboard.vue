@@ -1,12 +1,19 @@
 <template>
   <div class="app-container">
-    1212312
+    <container-nav className="container-nav-class"></container-nav>
+    <div class="container-main">
+      1111111111
+    </div>
   </div>
 </template>
 
 <script>
+import ContainerNav from '@/components/ContainerNav'
 export default {
-  name: 'DashBoard'
+  name: 'DashBoard',
+  component: {
+    ContainerNav
+  }
 }
 </script>
 
