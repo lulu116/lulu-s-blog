@@ -20,8 +20,15 @@ a:hover {
   outline: none;
   text-decoration: none;
 }
+.aixin {
+  color: #f00;
+}
 div:focus {
   outline: none;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
 }
 // 页面右边：主体部分
 .main-container {
@@ -58,6 +65,13 @@ div:focus {
     overflow: auto;
     float: left;
     box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.2) !important;
+    .container-nav-sliderbar {
+      margin: 10px;
+      .is-active {
+        background-color: #93a9b12e!important;
+        color: #f00!important;
+      }
+    }
   }
   .container-main {
     overflow: auto;
@@ -70,6 +84,13 @@ div:focus {
 }
 .sider-background {
   background-color: $menuDefaultBg;
+  .is-active {
+    background-color: #59bbff!important;
+    color: #fff!important;
+  }
+}
+.el-menu {
+  border: 0;
 }
 .plat-title {
   width: 220px;
@@ -88,10 +109,6 @@ div:focus {
 .svg-icon {
   margin-right: 10px;
   margin-bottom: -2px;
-}
-.is-active {
-  background-color: #59bbff!important;
-  color: #fff!important;
 }
 
 // 页面右边 底部区域

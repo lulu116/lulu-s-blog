@@ -1,20 +1,18 @@
 <template>
   <div class="app-container">
-    <container-nav className="container-nav-class"></container-nav>
-    <div class="container-main">
-      1111111111
-    </div>
+    <container-nav class="container-nav-class"></container-nav>
+    <div class="container-main">1111111111</div>
   </div>
 </template>
 
 <script>
-import ContainerNav from '@/components/ContainerNav'
+import ContainerNav from "@/components/ContainerNav";
 export default {
-  name: 'DashBoard',
+  name: "DashBoard",
   component: {
     ContainerNav
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -1,43 +1,46 @@
 <template>
   <div :class="className">
-    <ul  v-for="item in topMenu"
-      :key="item.key"
-      :index="item.key">
-      <li>
-        <a href="#">
-          <svg-icon :iconClass="item.icon" className="sliderbar-icon"></svg-icon>
-          <span>12132</span>
+    <el-menu mode="vertical" class="container-nav-sliderbar" :default-active="getActiveKey">
+      <el-menu-item v-for="item in getSliderBar" :key="item.key" :index="item.key" class="container-menu-item">
+        <a href="javascript:void(0);" @click="getContainerDetails(item.ukey)">
+          <svg-icon iconClass="aixin"></svg-icon>
+          <span>{{item.title}}</span>
         </a>
-      </li>
-  
-    </ul>
+      </el-menu-item>
+    </el-menu>
   </div>
 </template>
 
 <script>
-import topMenu from '@/datas/menu'
+import { mapGetters, mapMutations  } from "vuex";
 export default {
-  name: 'ContainerNav',
-  data () {
-    return {
-      topMenu
-    }
+  name: "ContainerNav",
+  data() {
+    return {};
   },
   props: {
     className: {
       type: String,
-      default: ''
+      default: ""
     }
   },
-  beforeMount () {
-    
+  computed: {
+    ...mapGetters("dashboard", ["getSliderBar", "getActiveKey"])
   },
   methods: {
-
+    ...mapMutations('dashboard',["NAV_PATH"]),
+    getContainerDetails(path){
+        this.NAV_PATH(path)
+    }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-
+.container-menu-item {
+  a {
+    width: 100%;
+    display: inline-block;
+  }
+}
 </style>
