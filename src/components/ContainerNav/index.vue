@@ -1,7 +1,8 @@
 <template>
   <div :class="className">
     <el-menu mode="vertical" class="container-nav-sliderbar" :default-active="getActiveKey">
-      <el-menu-item v-for="item in getSliderBar" :key="item.key" :index="item.key" class="container-menu-item">
+      <el-menu-item v-for="item in getSliderBar" 
+      :key="item.key" :index="item.key" class="container-menu-item" :ukey="item.ukey">
         <a href="javascript:void(0);" @click="getContainerDetails(item.ukey)">
           <svg-icon iconClass="aixin"></svg-icon>
           <span>{{item.title}}</span>
@@ -30,7 +31,7 @@ export default {
   methods: {
     ...mapMutations('dashboard',["NAV_PATH"]),
     getContainerDetails(path){
-        this.NAV_PATH(path)
+      this.NAV_PATH(path)
     }
   }
 };

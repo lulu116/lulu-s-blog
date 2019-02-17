@@ -7,36 +7,36 @@ const topMenu = [{
   label: '首页',
   key: '1',
   path: '/dashboard',
-  icon: 'shenghuo'
+  icon: 'zhuye'
 }, {
   label: '技术',
   key: '2',
-  path: '/skill',
-  icon: 'jishu'
+  path: '/technology',
+  icon: 'jishu1'
 }, {
   label: '项目',
   key: '3',
   path: '/project',
-  icon: 'jishu'
+  icon: 'xiangmu'
 },{
   label: '荐书',
   key: '4',
-  path: '/project',
-  icon: 'jishu'
+  path: '/books',
+  icon: 'shuji'
 },{
   label: '生活',
   key: '5',
-  path: '/project',
-  icon: 'jishu'
+  path: '/life',
+  icon: 'shenghuo1'
 },{
   label: '总结',
   key: '6',
-  path: '/project',
-  icon: 'jishu'
+  path: '/summarize',
+  icon: 'zongjieyubaogao'
 },{
   label: '关于我',
   key: '7',
-  path: '/project',
-  icon: 'jishu'
+  path: '/aboutMe',
+  icon: 'guanyuwomen'
 }]
 export default topMenu

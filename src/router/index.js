@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import NotFound from '@/views/404'
 import Layout from '@/components/Layout/Layout'
 import DashBoard from '@/views/dashboard'
-import skill from '@/views/skill/skill'
+import technology from '@/views/skill/skill'
 import project from '@/views/project/project'
 Vue.use(Router)
 const Routers = [
@@ -21,15 +21,15 @@ const Routers = [
     ]
   },
   {
-    path: '/skill',
-    name: 'skill', // 唯一标识，监听路由时可用
+    path: '/technology',
+    name: 'technology', // 唯一标识，监听路由时可用
     component: Layout,
     props: true, // 当有可变参数时,this.$route.params获取参数 可用props获取
     children: [
       {
         path: '',
-        name: 'skillList',
-        component: skill
+        name: 'technologyList',
+        component: technology
       }
     ]
   },
@@ -42,6 +42,58 @@ const Routers = [
       {
         path: '',
         name: 'projectList',
+        component: project
+      }
+    ]
+  },
+  {
+    path: '/books',
+    name: 'books', // 唯一标识，监听路由时可用
+    component: Layout,
+    props: true, // 当有可变参数时,this.$route.params获取参数 可用props获取
+    children: [
+      {
+        path: '',
+        name: 'booksList',
+        component: project
+      }
+    ]
+  },
+  {
+    path: '/life',
+    name: 'life', // 唯一标识，监听路由时可用
+    component: Layout,
+    props: true, // 当有可变参数时,this.$route.params获取参数 可用props获取
+    children: [
+      {
+        path: '',
+        name: 'lifeList',
+        component: project
+      }
+    ]
+  },
+  {
+    path: '/summarize',
+    name: 'summarize', // 唯一标识，监听路由时可用
+    component: Layout,
+    props: true, // 当有可变参数时,this.$route.params获取参数 可用props获取
+    children: [
+      {
+        path: '',
+        name: 'summarizeList',
+        component: project
+      }
+    ]
+  },
+  {
+    path: '/aboutMe',
+    name: 'aboutMe', // 唯一标识，监听路由时可用
+    component: Layout,
+    props: true, // 当有可变参数时,this.$route.params获取参数 可用props获取
+    children: [
+      {
+        path: '',
+        name: 'aboutMeList',
         component: project
       }
     ]
