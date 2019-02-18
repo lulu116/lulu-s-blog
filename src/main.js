@@ -10,7 +10,6 @@ import '@/styles/index.scss' // 自己写的样式
 import '@/styles/js/font_abcd.js' // iconfont字体
 import 'nprogress/nprogress.css' // 进度条样式，必须引入
 import SvgIcon from '@/components/SvgIcon'
-import ContainerNav from '@/components/ContainerNav'
 // 使用element-ui
 Vue.use(ElementUI, {
   size: 'medium' // 改变组件的默认尺寸medium / small / mini
@@ -29,7 +28,6 @@ Vue.config.productionTip = false
   next('/dashboard')
 }) */
 Vue.component('svg-icon', SvgIcon) // 全局注册组件
-Vue.component('ContainerNav', ContainerNav) // 全局注册组件
 
 // 简单配置
 NProgress.inc(0.1) // 产生一个随机增量

@@ -18,22 +18,22 @@ const topMenu = [{
   key: '3',
   path: '/project',
   icon: 'xiangmu'
-},{
+}, {
   label: '荐书',
   key: '4',
   path: '/books',
   icon: 'shuji'
-},{
+}, {
   label: '生活',
   key: '5',
   path: '/life',
   icon: 'shenghuo1'
-},{
+}, {
   label: '总结',
   key: '6',
   path: '/summarize',
   icon: 'zongjieyubaogao'
-},{
+}, {
   label: '关于我',
   key: '7',
   path: '/aboutMe',

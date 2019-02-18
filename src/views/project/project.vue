@@ -1,15 +1,63 @@
 <template>
   <div class="app-container">
-    项目
+     <container-nav class="container-nav-class" @handleClickNav="getContainerNav"></container-nav>
+    <div
+      v-loading="projectLoading"
+      class="container-main-big"
+      element-loading-text="努力加载中..."
+      element-loading-spinner="el-icon-loading"
+      element-loading-background="#3e4244d6"
+      >
+      <div class="container-main">{{getProjectMain[Number(navpath)-1].content}}</div>
+    </div>
   </div>
 </template>
 
 <script>
+import ContainerNav from './ContainerNav'
+import { mapGetters, mapState, mapMutations } from 'vuex'
 export default {
-  name: 'project'
+  name: 'project',
+  components: {
+    ContainerNav
+  },
+  data () {
+    return {
+      projectLoading: true
+    }
+  },
+  computed: {
+    ...mapState('blogproject', ['navpath']),
+    ...mapGetters('blogproject', ['getProjectMain'])
+  },
+  methods: {
+    ...mapMutations('blogproject', ['NAV_PATH']),
+    getContainerNav (path) {
+      this.NAV_PATH(path)
+      this.handleChangeLoading()
+    },
+    handleChangeLoading () {
+      this.projectLoading = true
+      const _this = this
+      if (this.getProjectMain) {
+        setTimeout(
+          function () {
+            _this.projectLoading = false
+          }, 1000)
+      }
+    }
+  },
+  created () {
+    this.handleChangeLoading()
+  }
 }
 </script>
 
-<style scoped>
-
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss" rel="stylesheet/scss" scoped>
+.container-main-big {
+  width: calc(100vw - 530px);
+  height: calc(100vh - 106px);
+  margin-left: 281px;
+}
 </style>

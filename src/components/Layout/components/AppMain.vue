@@ -10,7 +10,10 @@
 
 <script>
 export default {
-  name: 'AppMain'
+  name: 'AppMain',
+  components: {
+
+  }
 }
 </script>
 <style rel="stylesheet/scss" lang="scss" scoped>

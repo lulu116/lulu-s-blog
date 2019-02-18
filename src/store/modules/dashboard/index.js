@@ -1,12 +1,16 @@
 import getters from './getters'
 import actions from './actions'
 import mutations from './mutations'
-import {project} from '@/datas/container'
+import {wrapper, dashboardSkll} from '@/datas/dashboard/wrapper'
+
+import { Cache } from '@/utils'
+const cache = new Cache()
+
 const dashboard = {
   namespaced: true,
   state: {
-    subSliderbar: project || [],
-    navpath: ''
+    wrapperList: wrapper || [], // 轮播图列表
+    dashboardSkll
   },
   getters,
   actions,

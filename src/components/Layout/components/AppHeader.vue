@@ -27,7 +27,7 @@
       </a>
     </el-tooltip>
     <el-tooltip class="item" effect="light" content="我的github">
-      <a href="https://github.com/lulu116" target="_blank" class="github-css">
+      <a href="https://github.com/lulu116?tab=repositories" target="_blank" class="github-css">
         <svg-icon iconClass="github" class="github-svg"></svg-icon>
       </a>
     </el-tooltip>

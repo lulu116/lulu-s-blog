@@ -1,1 +1,1 @@
-export const NAV_PATH = 'NAV_PATH' 
+export const NAV_PATH = 'NAV_PATH'

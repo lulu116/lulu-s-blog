@@ -18,9 +18,9 @@ export default {
       default: ''
     }
   },
-   methods: {
-    handleClickChangeHamburger() {
-       this.$emit('handleClickChangeHamburger')
+  methods: {
+    handleClickChangeHamburger () {
+      this.$emit('handleClickChangeHamburger')
     }
   }
 }

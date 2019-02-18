@@ -1,9 +1,9 @@
 
 export default {
-  getSliderBar: (state) => {
-    return state.subSliderbar
+  getWrapperList: (state) => {
+    return state.wrapperList
   },
-  getActiveKey: (state) => {
-    return state.subSliderbar[0].key
+  getdashboardSkll: (state) => {
+    return state.dashboardSkll
   }
 }

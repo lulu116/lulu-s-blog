@@ -33,8 +33,8 @@ export default {
       }
     }
   },
-   methods: {
-    toggleHamburger() {
+  methods: {
+    toggleHamburger () {
       this.$emit('toggleHamburger')
     }
   }

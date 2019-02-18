@@ -4,14 +4,14 @@
  * @desc: 假数据
  */
 const project = [{
-    title: '123456',
-    ukey: 'one',
-    key: '1'
+  title: '123456',
+  key: '1'
 }, {
-    title: '1234565656',
-    ukey: 'one1',
-    key: '2'
+  title: '1234565656',
+  key: '2'
 }]
+const dashboardNav = [{}]
 export {
-    project
+  project,
+  dashboardNav
 }
