@@ -30,6 +30,15 @@
     <div class="dashboard-bottom">
       <ul class="skill-li">
         <li v-for="item in getdashboardSkll" :key="item.key">
+          <div :style="{backgroundColor:item.bgcolor}">
+            <div class="skill-li__left" >
+              <img :src="item.path" :title="item.title" :alt="item.alt"/>
+            </div>
+            <div class="skill-li__right">
+              <div>技能：{{item.title}}</div>
+              <div>熟练度：{{item.percent}}</div>
+            </div>
+          </div>
           <!-- <img :src="item.path" :title="item.title" :alt="item.alt"/>
           <span>{{item.percent}}</span> -->
         </li>
@@ -65,13 +74,39 @@ export default {
     float: left;
     width: 30%;
     height: 200px;
-    background: pink;
     margin: 10px 20px;
-    img {
+    border: 1px solid #f5f5f5;
+    & > div {
       width: 100%;
-      height: 180px;
-      display: block;
+      height: 100%;
+      .skill-li__left {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: 48px;
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+    .skill-li__right {
+      float: right;
+      width: 180px;
+      height: 100px;
+      margin-right: 20px;
+      margin-top: 48px;
+      & > div {
+        line-height: 35px;
+      }
     }
+  }
+  & > div:hover {
+    box-shadow: 3px 3px 2px rgba(115, 130, 131, 0.2) !important;
+    transition: box-shadow 0.47s;
+  }
+
   }
 }
 </style>
