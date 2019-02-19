@@ -3,8 +3,11 @@ import Router from 'vue-router'
 import NotFound from '@/views/404'
 import Layout from '@/components/Layout/Layout'
 import DashBoard from '@/views/dashboard'
-import technology from '@/views/skill/skill'
+import technology from '@/views/technology/technology'
 import project from '@/views/project/project'
+import life from '@/views/life/life'
+import books from '@/views/books/books'
+import summarize from '@/views/summarize/summarize'
 Vue.use(Router)
 const Routers = [
   {
@@ -55,7 +58,7 @@ const Routers = [
       {
         path: '',
         name: 'booksList',
-        component: project
+        component: books
       }
     ]
   },
@@ -68,7 +71,7 @@ const Routers = [
       {
         path: '',
         name: 'lifeList',
-        component: project
+        component: life
       }
     ]
   },
@@ -81,7 +84,7 @@ const Routers = [
       {
         path: '',
         name: 'summarizeList',
-        component: project
+        component: summarize
       }
     ]
   },

@@ -10,8 +10,6 @@ const project = [{
   title: '1234565656',
   key: '2'
 }]
-const dashboardNav = [{}]
 export {
-  project,
-  dashboardNav
+  project
 }

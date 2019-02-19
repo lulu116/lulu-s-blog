@@ -15,7 +15,7 @@
 import ContainerNav from './ContainerNav'
 import { mapGetters, mapState, mapMutations } from 'vuex'
 export default {
-  name: 'project',
+  name: 'technology',
   components: {
     ContainerNav
   },
@@ -25,11 +25,11 @@ export default {
     }
   },
   computed: {
-    ...mapState('blogproject', ['navpath']),
-    ...mapGetters('blogproject', ['getProjectMain'])
+    ...mapState('technology', ['navpath']),
+    ...mapGetters('technology', ['getProjectMain'])
   },
   methods: {
-    ...mapMutations('blogproject', ['NAV_PATH']),
+    ...mapMutations('technology', ['NAV_PATH']),
     getContainerNav (path) {
       this.NAV_PATH(path)
       this.handleChangeLoading()
@@ -51,7 +51,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" rel="stylesheet/scss" scoped>
 .container-main-big {
   width: calc(100vw - 530px);

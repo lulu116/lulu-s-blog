@@ -1,67 +1,73 @@
 const wrapper = [{
-  path: require('@/assets/dashboard/106.jpg'),
+  path: require('@/assets/dashboard/1.jpg'),
   title: '11',
   alt: '对不起，地址失效啦',
   key: '0'
 }, {
-  path: require('@/assets/dashboard/106.jpg'),
+  path: require('@/assets/dashboard/1.jpg'),
   title: '11',
   alt: '对不起，地址失效啦',
   key: '1'
 }, {
-  path: require('@/assets/dashboard/106.jpg'),
+  path: require('@/assets/dashboard/1.jpg'),
   title: '11',
   alt: '对不起，地址失效啦',
   key: '2'
 }, {
-  path: require('@/assets/dashboard/106.jpg'),
+  path: require('@/assets/dashboard/1.jpg'),
   title: '11',
   alt: '对不起，地址失效啦',
   key: '3'
 }]
 
 const dashboardSkll = [{
-  path: require('@/assets/dashboard/react.jpg'),
+  path: 'React',
   title: 'React',
   alt: '对不起，地址失效啦',
   percent: '60%',
   key: '0',
+  color: '',
   bgcolor: '#CFEEFC'
 }, {
-  path: require('@/assets/dashboard/react.jpg'),
+  path: 'antdesign',
   title: 'ant design',
   alt: '对不起，地址失效啦',
   percent: '80%',
+  color: '#4f6bbd',
   key: '1',
   bgcolor: '#DAF2C2'
 }, {
-  path: require('@/assets/dashboard/vue.png'),
+  path: 'Vue',
   title: 'Vue',
   alt: '对不起，地址失效啦',
   percent: '60%',
   key: '2',
-  bgcolor: '#B6A2DE'
+  color: '',
+  bgcolor: 'rgba(182, 162, 222, 0.42)'
 }, {
-  path: require('@/assets/dashboard/react.jpg'),
+  path: 'ElementUI',
   title: 'Element UI',
   alt: '对不起，地址失效啦',
   percent: '80%',
   key: '3',
+  color: '#6ec9ca',
   bgcolor: '#FFEDCF'
 }, {
-  path: require('@/assets/dashboard/webpack.jpg'),
+  path: 'webpack',
   title: 'webpack',
   alt: '对不起，地址失效啦',
   percent: '40%',
   key: '4',
+  color: '',
   bgcolor: '#F9DEE2'
 }, {
-  path: require('@/assets/dashboard/ps.jpg'),
+  path: 'adobephotoshop',
   title: 'photoShop',
   alt: '对不起，地址失效啦',
   percent: '60%',
   key: '5',
-  bgcolor: '#41C9C6'
+  color: '',
+  bgcolor: 'rgba(65, 201, 198, 0.21)'
 }]
 export {
   wrapper,
