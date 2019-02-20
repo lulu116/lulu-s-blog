@@ -129,6 +129,11 @@ ul, ol {
     min-height: 100px;
     height: calc(100vh - 558px);
     border-top: 2px solid #F0F2F7;
+    .svg-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
   }
 }
 .hideSidebar {

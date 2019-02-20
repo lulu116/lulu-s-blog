@@ -24,7 +24,7 @@
        <el-carousel :interval="4000" indicator-position="outside">
         <el-carousel-item v-for="item in getWrapperList" :key="item.key">
           <!-- <img src="../assets/dashboard/106.jpg"/> -->
-          <img :src="item.path" :title="item.title" :alt="item.alt"/>
+          <img :src="'.'+item.path" :title="item.title" :alt="item.alt"/>
         </el-carousel-item>
        </el-carousel>
       </div>
@@ -108,11 +108,6 @@ export default {
   }
 
   }
-}
-.svg-img {
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 .mychart {
   width: 100%;

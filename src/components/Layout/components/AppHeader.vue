@@ -16,11 +16,6 @@
         <el-dropdown-item class="clearfix" command="b">退出</el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
-    <!-- <el-tooltip class="item" effect="light" content="segmentfault">
-      <a href="https://segmentfault.com/u/lulu116/notes" target="_blank" class="github-css">
-        <img src="@/assets/sf.png" alt="segmentfault" class="github-svg sf" />
-      </a>
-    </el-tooltip>-->
     <el-tooltip class="item" effect="light" content="我的邮箱">
       <a href="https://github.com/lulu116" target="_blank" class="github-css">
         <svg-icon iconClass="email" class="github-svg"></svg-icon>
@@ -94,17 +89,13 @@ export default {
     height: 60px;
     margin-right: 10px;
     text-align: center;
+    .github-svg {
+      font-size: 30px;
+      color: #999999ed;
+    }
   }
   .github-css:hover .github-svg {
     color: #606266f5;
   }
-}
-.github-svg {
-  font-size: 30px;
-  color: #999999ed;
-}
-.sf {
-  vertical-align: middle;
-  border-radius: 50%;
 }
 </style>
