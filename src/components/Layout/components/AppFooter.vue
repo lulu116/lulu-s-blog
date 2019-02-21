@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">CLOUD PLATFORM @2019</footer>
+  <footer class="footer">Copyright © 2019 designed by liuting</footer>
 </template>
 
 <script>

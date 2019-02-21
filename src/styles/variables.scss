@@ -1,7 +1,8 @@
 //声明变量
 $htmlBg: #F0F2F7;                                 // 整个页面的背景颜色
-$appMainBg: #FFFFFF;                             // 内容区域的背景颜色
+$appMainBg: #FFFFFF;                              // 内容区域的背景颜色
 $menuDefaultBg: #f5f7fa;                           //菜单默认背景颜色
+$htmlFontColor: #333;                             // 整个页面默认字体颜色
 $textSizeA: 24px;                                 // 文章正标题
 $textSizeB: 18px;                                 // 强调标题
 $textSizeC: 16px;                                 // 弹出框标题/表格标题
@@ -9,4 +10,4 @@ $textSizeDefault: 14px;                           // 默认字号/页签/表格�
 $textSizeE: 13px;                                 // 特定场景使用
 $textSizeF: 12px;                                 // 线性按钮文字/备注文字
 
-$html-footer-color: #f00;                          // 底部文字颜色
+$html-footer-color: #ccc;                          // 底部文字颜色

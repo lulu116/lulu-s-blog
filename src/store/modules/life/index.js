@@ -2,7 +2,6 @@ import getters from './getters'
 import actions from './actions'
 import mutations from './mutations'
 import {lifeNav, lifeContent} from '@/datas/life'
-console.log(lifeContent)
 import { Cache } from '@/utils'
 const cache = new Cache()
 

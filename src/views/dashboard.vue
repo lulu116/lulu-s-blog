@@ -70,47 +70,4 @@ export default {
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
-.skill-li {
-  list-style: none;
-  height: 100%;
-  margin: 0px 10px;
-  margin-left: 54px;
-  li {
-    float: left;
-    width: 30%;
-    height: 200px;
-    margin: 10px 20px;
-    border: 1px solid #f5f5f5;
-    & > div {
-      width: 100%;
-      height: 100%;
-      .skill-li__left {
-        float: left;
-        width: 100px;
-        height: 100px;
-        margin-left: 20px;
-        margin-top: 48px;
-      }
-    .skill-li__right {
-      float: right;
-      width: 180px;
-      height: 100px;
-      margin-right: 20px;
-      margin-top: 48px;
-      & > div {
-        line-height: 35px;
-      }
-    }
-  }
-  & > div:hover {
-    box-shadow: 3px 3px 2px rgba(115, 130, 131, 0.2) !important;
-    transition: box-shadow 0.47s;
-  }
-
-  }
-}
-.mychart {
-  width: 100%;
-  height: 100%;
-}
 </style>
