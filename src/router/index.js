@@ -8,6 +8,7 @@ import project from '@/views/project/project'
 import life from '@/views/life/life'
 import books from '@/views/books/books'
 import summarize from '@/views/summarize/summarize'
+import aboutMe from '@/views/aboutMe/aboutMe'
 Vue.use(Router)
 const Routers = [
   {
@@ -97,7 +98,7 @@ const Routers = [
       {
         path: '',
         name: 'aboutMeList',
-        component: project
+        component: aboutMe
       }
     ]
   },
