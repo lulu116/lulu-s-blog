@@ -5,5 +5,11 @@ export default {
   },
   getSliderbar: (state) => {
     return state.sidebar.open
+  },
+  getTopMenu: (state) => {
+    return state.topMenu || []
+  },
+  getActiveKey: (state) => {
+    return state.activeKey
   }
 }

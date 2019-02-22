@@ -2,13 +2,14 @@
   <el-menu
     mode="vertical"
     class="sider-background"
-    :default-active="activeKey"
+    :default-active="getActiveKey"
+    @select="handleSelect"
   >
     <el-row class="plat-title">
       <img src="@/assets/big.png" class="en-pig"/>
     </el-row>
     <el-menu-item
-      v-for="item in topMenu"
+      v-for="item in getTopMenu"
       :key="item.key"
       :index="item.key"
       class="menu-item"
@@ -21,13 +22,25 @@
   </el-menu>
 </template>
 <script>
-import topMenu from '@/datas/menu'
+import {mapGetters} from 'vuex'
 export default {
   name: 'AppAside',
   data () {
     return {
-      topMenu,
-      activeKey: topMenu[0].key
+
+    }
+  },
+  computed: {
+    ...mapGetters('app', ['getTopMenu', 'getActiveKey'])
+  },
+  methods: {
+    handleSelect(key, keyPath) {
+      this.$store.dispatch({
+        type: 'app/handleSelect',
+        payload: {
+          key
+        }
+      })
     }
   }
 }

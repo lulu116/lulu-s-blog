@@ -27,7 +27,7 @@ const technologyContent = [{
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              首先来看下前端发展历程
             </p>
-            <img src="./static/img/big.ico"/ >
+            <img src="./static/img/big.ico" class="books-img" / >
             <p>
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              其实我们的前端开发就是HTML、CSS、JavaScript，随着时代的发展，成为今天的大前端。<br/><br/>

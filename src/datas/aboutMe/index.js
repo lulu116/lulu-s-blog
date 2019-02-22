@@ -19,7 +19,7 @@ const aboutMeContent = [{
             华云中盛科技有限公司开始实习，实习前期由于有一点基础，对es6、react、webpack、git、node.js这些技术能够快速实践到项目中，实习期间
             接触到的项目为HCF数据库管理平台<strong>资源管理模块</strong>
             </p>
-            <img src="./static/project/dbaas_resource.jpg"/ >
+            <img src="./static/project/dbaas_resource.jpg" class="books-img" / >
             <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             在深圳市华云中盛科技有限公司工作至今，收获了很多，同时也对前端的这个行业的发展与技术栈有了更深的认识和理解。还要加强自身的学习，手动零基础
@@ -34,7 +34,7 @@ const aboutMeContent = [{
             微信（手机号）: 15881328936<br/>
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             欢迎骚扰
-            <img src="./static/img/cat.png" style="width:20px;height: 20px;padding: 0"/>
+            <img src="./static/img/cat.png" style="width:20px;height: 20px;padding: 0" />
             </p>
           </div>
        

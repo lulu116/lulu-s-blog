@@ -6,7 +6,9 @@
       class="container-main-big"
       element-loading-text="努力加载中..."
       >
-      <div class="container-main">{{getProjectMain[Number(navpath)-1].content}}</div>
+      <div class="container-main" v-html="getProjectMain[Number(navpath)-1].content">
+        {{getProjectMain[Number(navpath)-1].content}}
+      </div>
     </div>
   </div>
 </template>

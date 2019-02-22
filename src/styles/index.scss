@@ -149,9 +149,9 @@ ul, ol {
           height: 100%;
           .skill-li__left {
             float: left;
-            width: 100px;
-            height: 100px;
-            margin-left: 20px;
+            width: 35%;
+            height: 35%;
+            margin-left: 15px;
             margin-top: 48px;
             .svg-img {
               width: 100%;
@@ -160,9 +160,9 @@ ul, ol {
           }
           .skill-li__right {
             float: right;
-            width: 135px;
-            height: 100px;
-            margin-right: 20px;
+            width: 40%;
+            height: 40%;
+            margin-right: 15px;
             margin-top: 48px;
             & > div {
               line-height: 35px;

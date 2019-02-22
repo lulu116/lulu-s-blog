@@ -1,6 +1,7 @@
 
 import {
-  TOGGLE_SLIDERBAR
+  TOGGLE_SLIDERBAR,
+  ACTIVE_KEY
 } from './mutation-types'
 
 import {Cache} from '@/utils'
@@ -13,5 +14,9 @@ export default {
       cache.put('sidebarStatusFlag', 0)
     }
     state.sidebar.open = !state.sidebar.open
+  },
+  [ACTIVE_KEY]: (state, payload) => {
+    cache.put('sidebarActiveKey', payload)
+    state.activeKey = payload;
   }
 }
