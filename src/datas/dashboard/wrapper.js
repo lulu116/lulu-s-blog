@@ -1,23 +1,18 @@
 const wrapper = [{
-  path: require('../../assets/dashboard/1.jpg'),
+  path: require('../../assets/dashboard/haibian1.jpg'),
   title: '11',
   alt: '对不起，地址失效啦',
   key: '0'
 }, {
-  path: require('../../assets/dashboard/1.jpg'),
+  path: require('../../assets/dashboard/halodrymium.jpg'),
   title: '11',
   alt: '对不起，地址失效啦',
   key: '1'
 }, {
-  path: require('../../assets/dashboard/1.jpg'),
+  path: require('../../assets/dashboard/haibian1.jpg'),
   title: '11',
   alt: '对不起，地址失效啦',
   key: '2'
-}, {
-  path:require('../../assets/dashboard/1.jpg'),
-  title: '11',
-  alt: '对不起，地址失效啦',
-  key: '3'
 }]
 
 const dashboardSkll = [{

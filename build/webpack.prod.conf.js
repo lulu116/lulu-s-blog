@@ -67,7 +67,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         ? 'index.html'
         : config.build.index,
       template: 'index.html',
-      inject: false,
+      inject: true, //false自定义配置（dist/index.html） true自动打包到dist/index.html
       minify: {
         removeComments: true,
         collapseWhitespace: true,
