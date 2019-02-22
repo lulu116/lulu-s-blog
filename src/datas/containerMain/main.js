@@ -17,7 +17,11 @@ const projectMain = [{
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             我主要负责1. 机器管理， 2. 实例管理，3. 健康巡检， 4. 备份恢复， 5. 性能分析，下面简单对各功能概述：
             </p>
-            <br/>
+              <p>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             项目主页
+            </p>
+            <img src="./static/project/dbaas_index.jpg"/ >
              <p>
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              1. 机器管理相当于最底层，而实例管理是建立在机器之上的，本系统机器管理调用的是<strong>vmvare公司&nbsp;
