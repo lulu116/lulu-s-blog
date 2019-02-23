@@ -25,7 +25,7 @@ const aboutMeContent = [{
             在深圳市华云中盛科技有限公司工作至今，收获了很多，同时也对前端的这个行业的发展与技术栈有了更深的认识和理解。还要加强自身的学习，手动零基础
             搭建框架，从项目中填充自己的不足之处。前端开发要学习的东西远比我想象的多，保持持续学习的心态，一边工作一边思考总结，将所学所想真正的运用起来。
             </p><br/><br/>
-            <p style="color: #ccc">
+            <p style="color: #888">
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             邮箱：sliusting970@163.com<br/>
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
