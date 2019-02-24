@@ -7,7 +7,7 @@ const project = [{
   title: 'HCF数据库管理平台',
   key: '1'
 }, {
-  title: '1234565656',
+  title: '数据库云管理平台',
   key: '2'
 }]
 export {

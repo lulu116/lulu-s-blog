@@ -1,16 +1,16 @@
 const wrapper = [{
-  path: require('../../assets/dashboard/haibian1.jpg'),
-  title: '11',
+  path: require('../../assets/dashboard/wanxia.jpg'),
+  title: '夕阳西下-晚霞',
   alt: '对不起，地址失效啦',
   key: '0'
 }, {
   path: require('../../assets/dashboard/halodrymium.jpg'),
-  title: '11',
+  title: '深圳湾公园海岸线',
   alt: '对不起，地址失效啦',
   key: '1'
 }, {
   path: require('../../assets/dashboard/haibian1.jpg'),
-  title: '11',
+  title: '宝安西湾红树林湿地公园',
   alt: '对不起，地址失效啦',
   key: '2'
 }]
