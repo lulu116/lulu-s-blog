@@ -57,7 +57,26 @@ const projectMain = [{
           `
 }, {
   key: '2',
-  content: 'dsfas456456dfasdfsdfdsf222222222'
+  content: `
+          <h2>HCF数据库管理平台</h2>
+          <div>
+            <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            数据库云管理平台的设计灵感来自于HCF数据库管理平台，HCF数据库管理平台是基于mysql提供一些日常的运维操作，而随着数据中心引入越来越多类型
+            的数据库，如Redis、Mongodb等，每种数据库都有自己独立的一套管理操作平台，风格各不相同。自动化安装、监控等运维工作都需要
+            自行对接IAAS平台，工作量大且重复。这样就造成了DBA日常运维繁琐、易出错。因此建设云管平台，将由此平台统一对接IAAS平台，通过向IAAS平台
+            申请资源后统一管理，且提供统一的登录操作标准。
+            </p>
+             <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           此平台提供统一的资源管理、数据库统一的运维操作，将类似于公有云的形式提供给业务人员来使用，所以mysql、redis、Mongodb都要严格遵循此平台
+           接口设计规范。我主要负责实例管理、工单管理。实例管理：由于实例管理分三种类型的实例，如果在mysql创建实例，则创建后实例会去调用mysql的dbaas
+           的接口创建，其它都一样的原理。我们可以在工单中查看实例详情
+            </p>
+            <img src="./static/project/cloud1.png" class="books-img"/  >
+          </div>
+       
+          `
 }]
 export {
   projectMain
