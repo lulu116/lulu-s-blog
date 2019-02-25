@@ -4,7 +4,7 @@
 
 ## 项目预览
 ![项目主页](图片地址 ''图片title'')
-
+[git](https://git-scm.com/)
 ## 项目运行
 ```
 运行项目需要安装: [node.js](https://nodejs.org/en/)、 [git](https://git-scm.com/)
