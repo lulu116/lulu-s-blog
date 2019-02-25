@@ -1,13 +1,14 @@
 # lulu's blog 个人网站
 这是我个人制作的项目，由于时间原因，项目存在很多缺陷，后期会定期优化，由于时间原因，没有处理移动端样式布局，请用PC端进行查看。此项目基于vue、vue-router、vuex、element ui前端主流技术栈，webpack打包部署
+
 在线预览：https://lulu116.github.io/Myblog-online/
 
 ## 项目预览
 ![项目主页](图片地址 ''图片title'')
-[git](https://git-scm.com/)
+
 ## 项目运行
-```
 运行项目需要安装: [node.js](https://nodejs.org/en/)、 [git](https://git-scm.com/)
+```
 项目克隆：git clone https://github.com/lulu116/MyBlog.git
 进行项目目录: cd MyBlog
 下载依赖: cnpm install / yarn add (开发环境、生产环境依赖)
