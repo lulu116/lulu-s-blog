@@ -1,4 +1,4 @@
-# lulu's blog 个人网站
+# lulu's blog 个人网站 
 这是我个人制作的项目，由于时间原因，项目存在很多缺陷，后期会定期优化，由于时间原因，没有处理移动端样式布局，请用PC端进行查看。此项目基于vue、vue-router、vuex、element ui前端主流技术栈，webpack打包部署
 
 在线预览：https://lulu116.github.io/Myblog-online/
