@@ -4,7 +4,7 @@
 在线预览：https://lulu116.github.io/Myblog-online/
 
 ## 项目预览
-![项目主页](图片地址 ''图片title'')
+![项目主页](https://lulu116.github.io/Myblog-online/static/img/big.png)
 
 ## 项目运行
 运行项目需要安装: [node.js](https://nodejs.org/en/)、 [git](https://git-scm.com/)
