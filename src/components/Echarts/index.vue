@@ -62,6 +62,16 @@ export default {
             textStyle: {
               color: '#3d4040'
             }
+          }, {
+            name: 'Node.js',
+            textStyle: {
+              color: '#3d4040'
+            }
+          }, {
+            name: 'PHP',
+            textStyle: {
+              color: '#3d4040'
+            }
           }]
         },
         series: [
@@ -140,6 +150,42 @@ export default {
                 'itemStyle': {
                   'normal': {
                     'color': '#7effe6'
+                  }
+                }
+              },
+              {
+                value: 300,
+                name: 'photoShop',
+                'itemStyle': {
+                  'normal': {
+                    'color': '#7effe6'
+                  }
+                }
+              },
+              {
+                value: 300,
+                name: 'photoShop',
+                'itemStyle': {
+                  'normal': {
+                    'color': '#7effe6'
+                  }
+                }
+              },
+              {
+                value: 80,
+                name: 'Node.js',
+                'itemStyle': {
+                  'normal': {
+                    'color': '#F7F7D2'
+                  }
+                }
+              },
+              {
+                value: 50,
+                name: 'PHP',
+                'itemStyle': {
+                  'normal': {
+                    'color': '#D3E2EF'
                   }
                 }
               }

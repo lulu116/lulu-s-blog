@@ -63,6 +63,22 @@ const dashboardSkll = [{
   key: '5',
   color: '',
   bgcolor: 'rgba(65, 201, 198, 0.21)'
+}, {
+  path: 'Nodejs',
+  title: 'Node.js',
+  alt: '对不起，地址失效啦',
+  percent: '20%',
+  key: '6',
+  color: '',
+  bgcolor: 'rgba(215, 218, 42, 0.21)'
+}, {
+  path: 'PHP',
+  title: 'PHP',
+  alt: '对不起，地址失效啦',
+  percent: '15%',
+  key: '7',
+  color: '',
+  bgcolor: 'rgba(49, 119, 179, 0.21)'
 }]
 export {
   wrapper,
