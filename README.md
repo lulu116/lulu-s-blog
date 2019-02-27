@@ -3,6 +3,8 @@
 
 在线预览：https://lulu116.github.io/Myblog-online/
 
+## 主页效果
+![avatar](https://i.niupic.com/images/2019/02/27/5Pil.jpg)
 ## 项目运行
 运行项目需要安装: [node.js](https://nodejs.org/en/)、 [git](https://git-scm.com/)
 ```
