@@ -24,17 +24,18 @@
 ├── dist                     # 打包资源
 ├── node_modules             # node模块
 ├── src                      # 源码目录
-│   ├── assets              # 静态资源
-│   ├── components          # 自定义组件
-│   ├── datas               # 模拟静态数据
-│   ├── router              # 路由文件
-│   ├── services            # 接口调用
-│   ├── store               # 状态管理
-│   ├── styles              # 样式文件
-│   ├── utils               # 自定义工具类
-│   ├── views               # 显示的具体页面
-│   ├── App.vue             # 模板入口
-│   ├── main.js             # 入口文件
+│   ├── assets               # 静态资源
+│   ├── components           # 自定义组件
+│   ├── datas                # 模拟静态数据
+│   ├── mock                 # 模拟静态数据
+│   ├── router               # 路由文件
+│   ├── services             # 接口调用
+│   ├── store                # 状态管理
+│   ├── styles               # 样式文件
+│   ├── utils                # 自定义工具类
+│   ├── views                # 显示的具体页面
+│   ├── App.vue              # 模板入口
+│   ├── main.js              # 入口文件
 ├── static                   # 静态资源路径(直接拷贝的文件)
 ├── .babelrc                 # babel配置(预设和插件)
 ├── .eslintrc.js             # eslint配置
