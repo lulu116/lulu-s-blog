@@ -10,7 +10,7 @@
 ```
 项目克隆：git clone https://github.com/lulu116/MyBlog.git
 进行项目目录: cd MyBlog
-下载依赖: cnpm install / yarn add (开发环境、生产环境依赖)
+下载依赖: cnpm install / yarn install (开发环境、生产环境依赖)
 项目运行: npm start
 项目构建: npm run build
 生产环境运行: http-server ./dist (http-server 全局安装)
