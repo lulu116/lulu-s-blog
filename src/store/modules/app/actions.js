@@ -1,5 +1,8 @@
+import {test} from '@/services/app'
 export default {
-  OpenSliderbar ({commit, dispatch, getters}) {
+  async OpenSliderbar ({commit, dispatch, getters}) {
+    const res = await test()
+    console.log(res)
     commit('TOGGLE_SLIDERBAR')
   },
   handleSelect ({commit, dispatch, getters}, {payload}) {

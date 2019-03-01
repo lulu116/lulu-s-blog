@@ -14,6 +14,8 @@ import SvgIcon from '@/components/SvgIcon'
 Vue.use(ElementUI, {
   size: 'medium' // 改变组件的默认尺寸medium / small / mini
 })
+// 引入mock数据
+require('./mock/mock')
 // 取消 Vue 所有的日志与警告。
 // Vue.config.silent = true
 // 务必在加载 Vue 之后，立即同步设置以下内容

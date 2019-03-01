@@ -3,8 +3,9 @@
  */
 import Cache from './cache'
 import Json from './json'
-
+import request from './request'
 export {
   Cache,
-  Json
+  Json,
+  request
 }

@@ -58,7 +58,7 @@ export default {
     logout () {
       alert('确认要退出吗？')
     },
-    handleToMyConcact(){
+    handleToMyConcact () {
       this.$confirm('默认打开网易邮箱客户端', '温馨提示：', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
@@ -68,7 +68,7 @@ export default {
         window.open('Mailto:sliusting970@163.com','_self')
       }).catch(() => {
         // 点击取消
-      });
+      })
     }
   }
 }
