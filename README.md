@@ -3,12 +3,14 @@
 
 在线预览：https://lulu116.github.io/Myblog-online/
 
+## 主页效果
+![主页](https://i.niupic.com/images/2019/02/27/5Pil.jpg)
 ## 项目运行
 运行项目需要安装: [node.js](https://nodejs.org/en/)、 [git](https://git-scm.com/)
 ```
 项目克隆：git clone https://github.com/lulu116/MyBlog.git
 进行项目目录: cd MyBlog
-下载依赖: cnpm install / yarn add (开发环境、生产环境依赖)
+下载依赖: cnpm install / yarn install (开发环境、生产环境依赖)
 项目运行: npm start
 项目构建: npm run build
 生产环境运行: http-server ./dist (http-server 全局安装)
