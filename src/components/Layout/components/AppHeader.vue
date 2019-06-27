@@ -30,84 +30,91 @@
 </template>
 
 <script>
-import BreadCrumb from '@/components/BreadCrumb'
-import Hamburger from '@/components/Hamburger'
-import { mapActions, mapGetters } from 'vuex'
-export default {
-  name: 'AppHeader',
-  components: {
-    BreadCrumb,
-    Hamburger
-  },
-  data () {
-    return {}
-  },
-  computed: {
-    ...mapGetters('app', ['getUserName', 'getSliderbar'])
-  },
-  methods: {
-    ...mapActions('app', ['OpenSliderbar']),
-    changeHamburger () {
-      this.OpenSliderbar()
+  import BreadCrumb from '@/components/BreadCrumb'
+  import Hamburger from '@/components/Hamburger'
+  import {mapActions, mapGetters} from 'vuex'
+
+  export default {
+    name: 'AppHeader',
+    components: {
+      BreadCrumb,
+      Hamburger
     },
-    handleCommand (command) {
-      if (command === 'b') {
-        this.logout()
+    data() {
+      return {}
+    },
+    computed: {
+      ...mapGetters('app', ['getUserName', 'getSliderbar'])
+    },
+    methods: {
+      ...mapActions('app', ['OpenSliderbar']),
+      changeHamburger() {
+        this.OpenSliderbar()
+      },
+      handleCommand(command) {
+        if (command === 'b') {
+          this.logout()
+        }
+      },
+      logout() {
+        alert('确认要退出吗？')
+      },
+      handleToMyConcact() {
+        this.$confirm('默认打开网易邮箱客户端', '温馨提示：', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'info'
+        }).then(({value}) => {
+          // 点击确定
+          window.open('Mailto:sliusting970@163.com', '_self')
+        }).catch(() => {
+          // 点击取消
+        })
       }
-    },
-    logout () {
-      alert('确认要退出吗？')
-    },
-    handleToMyConcact () {
-      this.$confirm('默认打开网易邮箱客户端', '温馨提示：', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'info'
-      }).then(({ value }) => {
-        // 点击确定
-        window.open('Mailto:sliusting970@163.com','_self')
-      }).catch(() => {
-        // 点击取消
-      })
     }
   }
-}
 </script>
 <style rel="stylesheet/scss" lang="scss" scoped>
-.navbar {
-  height: 60px;
-  line-height: 60px;
-  border-radius: 0px !important;
-  .user-dropdown {
-    float: right;
-    margin-right: 15px;
-    cursor: pointer;
-    span {
-      height: 100%;
-      display: inline-block;
-      img {
-        vertical-align: middle;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
+  .navbar {
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0px !important;
+
+    .user-dropdown {
+      float: right;
+      margin-right: 15px;
+      cursor: pointer;
+
+      span {
+        height: 100%;
         display: inline-block;
+
+        img {
+          vertical-align: middle;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          display: inline-block;
+        }
       }
     }
-  }
-  .github-css {
-    float: right;
-    width: 50px;
-    display: inline-block;
-    height: 60px;
-    margin-right: 10px;
-    text-align: center;
-    .github-svg {
-      font-size: 30px;
-      color: #999999ed;
+
+    .github-css {
+      float: right;
+      width: 50px;
+      display: inline-block;
+      height: 60px;
+      margin-right: 10px;
+      text-align: center;
+
+      .github-svg {
+        font-size: 30px;
+        color: #999999ed;
+      }
+    }
+
+    .github-css:hover .github-svg {
+      color: #606266f5;
     }
   }
-  .github-css:hover .github-svg {
-    color: #606266f5;
-  }
-}
 </style>

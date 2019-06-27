@@ -1,10 +1,10 @@
-
 import {
   TOGGLE_SLIDERBAR,
   ACTIVE_KEY
 } from './mutation-types'
 
 import {Cache} from '@/utils'
+
 const cache = new Cache()
 export default {
   [TOGGLE_SLIDERBAR]: (state, payload) => {

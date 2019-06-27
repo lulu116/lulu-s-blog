@@ -1,4 +1,3 @@
-
 export default {
   getSliderBar: (state) => {
     return state.subSliderbar
